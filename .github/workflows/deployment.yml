@@ -28,7 +28,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages    # The branch where the site will be deployed
+        branch: main    # The branch where the site will be deployed
         folder: .           # The folder that contains your files (use '.' if files are in the root directory)
 
     # Step 5: Display the live URL in the action logs
