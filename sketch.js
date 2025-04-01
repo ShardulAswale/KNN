@@ -45,7 +45,9 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(800, 700);
+  // Create a responsive canvas that adjusts to the screen size
+  createCanvas(windowWidth, windowHeight);  // Use windowWidth and windowHeight for dynamic canvas size
+
   for (var i = 0; i < centroids.length; i++) {
     centroids[i].point.x = random(width);
     centroids[i].point.y = random(height);  
@@ -53,14 +55,14 @@ function setup() {
 }
 
 function draw() {
-  background(0)
+  background(0);
   
   // Draw the decision boundary (classification line) between clusters
   drawDecisionBoundary();
 
   // Draw points with colors based on their clusters
   for (var i = 0; i < points.length; i++) {
-    var point = points[i]
+    var point = points[i];
     if (point.cluster == -1) {
       fill(255); // no cluster assigned, use white
     } else {
