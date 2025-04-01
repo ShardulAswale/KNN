@@ -30,7 +30,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages  # The branch to deploy to (can be 'gh-pages')
+        branch: main  # The branch to deploy to (can be 'gh-pages')
         folder: .  # Folder containing your website files (in this case, the root folder)
 
     # Optional Step 5: Clean up if necessary (can be skipped)
